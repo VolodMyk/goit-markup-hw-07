@@ -25,15 +25,26 @@
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
-            <a class="logo-header" href="./index.html"> <span>Web</span>Studio</a>
+            <a class="logo-header" href="./index.html"> <span>Web</span>Studio</a
+            ><!-- links -->
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="mobile-icon" aria-label="mobile menu switcher">
+                <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+              </svg>
+            </button>
             <ul class="header-list">
               <li><a class="nav-item current" href="./index.html">Studio</a></li>
               <li><a class="nav-item" href="./portfolio.html">Portfolio</a></li>
               <li><a class="nav-item" href="">Contacts</a></li>
             </ul>
           </nav>
-          <address>
-            <ul class="header-list">
+          <address class="address-nav">
+            <ul class="header-list auth-nav">
               <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
               <li><a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
@@ -52,7 +63,7 @@
         </div>
       </section>
       <!-- Section About -->
-      <section class="section">
+      <section class="section about-section">
         <div class="container">
           <h2 hidden>About</h2>
           <ul class="about-list">
@@ -62,7 +73,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="list-itm-title">Strategy</h3>
+              <h3 class="about-list-title">Strategy</h3>
               <p>
                 Our goal is to identify the business problem to walk away with the perfect and
                 creative solution.
@@ -74,7 +85,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="list-itm-title">Punctuality</h3>
+              <h3 class="about-list-title">Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price within the shortest
                 possible time.
@@ -86,7 +97,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="list-itm-title">Diligence</h3>
+              <h3 class="about-list-title">Diligence</h3>
               <p>
                 Research and confirm brands that present the strongest digital growth opportunities
                 and minimize risk.
@@ -98,7 +109,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-itm-title">Technologies</h3>
+              <h3 class="about-list-title">Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a deep passion for
                 problem-solving.
@@ -108,18 +119,36 @@
         </div>
       </section>
       <!-- What can we do -->
-      <section class="section">
+      <section class="section services">
         <div class="container">
-          <h2 class="section-title">What are we doing</h2>
+          <h2 class="section-title services-title">What are we doing</h2>
           <ul class="list-can-we-do">
             <li class="list-can-we-item">
-              <img src="./images/desktop.jpg" width="360" height="300" alt="Desktop" />
+              <img
+                srcset="./images/desktop.jpg 1x, ./images/desktop@2x.jpg 2x"
+                src="./images/desktop.jpg"
+                width="360"
+                height="300"
+                alt="Desktop"
+              />
             </li>
             <li class="list-can-we-item">
-              <img src="./images/multi.jpg" width="360" height="300" alt="Multi" />
+              <img
+                srcset="./images/multi.jpg 1x, ./images/multi@2x.jpg 2x"
+                src="./images/multi.jpg"
+                width="360"
+                height="300"
+                alt="Multi"
+              />
             </li>
             <li class="list-can-we-item">
-              <img src="./images/mobile.jpg" width="360" height="300" alt="Mobile" />
+              <img
+                srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg"
+                src="./images/mobile.jpg"
+                width="360"
+                height="300"
+                alt="Mobile"
+              />
             </li>
           </ul>
         </div>
@@ -130,7 +159,13 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="our-team-list">
             <li class="team-list-item">
-              <img src="./images/mark.jpg" width="264" height="260" alt="Mark" />
+              <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
+                width="264"
+                height="260"
+                alt="Mark"
+              />
               <div class="team-item-name">
                 <h3 class="list-itm-title">Mark Guerrero</h3>
                 <p>Product Designer</p>
@@ -167,7 +202,11 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/tom.jpg" width="264" height="260" alt="Tom" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="Tom"
+              />
               <div class="team-item-name">
                 <h3 class="list-itm-title">Tom Ford</h3>
                 <p>Frontend Developer</p>
@@ -204,7 +243,13 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/camila.jpg" width="264" height="260" alt="Camila" />
+              <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg"
+                src="./images/camila.jpg"
+                width="264"
+                height="260"
+                alt="Camila"
+              />
               <div class="team-item-name">
                 <h3 class="list-itm-title">Camila Garcia</h3>
                 <p>Marketing</p>
@@ -334,7 +379,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-flex container">
-        <div>
+        <div class="footer-info">
           <a class="logo-footer" href="./index.html"> <span>Web</span>Studio</a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with digital marketing &
@@ -450,6 +495,58 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile-icon-close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <ul class="mobile-menu list">
+          <li class="item"><a href="./index.html" class="link">Studio</a></li>
+          <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+        <ul class="mobile-auth-nav list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+        </ul>
+        <ul class="list soc-med-list">
+          <li class="item">
+            <a href="" class="soc-med-link">
+              <svg class="soc-med-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="" class="soc-med-link">
+              <svg class="soc-med-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="" class="soc-med-link">
+              <svg class="soc-med-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a href="" class="soc-med-link">
+              <svg class="soc-med-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
